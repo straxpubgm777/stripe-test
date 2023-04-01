@@ -18,7 +18,7 @@ def charge(request):
 		)
 		charge = stripe.Charge.create(
 			customer=customer,
-			amount=50,
+			amount=10,
 			currency='usd',
 			description="donation"
 		)
