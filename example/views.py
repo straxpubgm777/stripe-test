@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 import stripe
 
-stripe.api_key = "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"
+stripe.api_key = "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"
 
 def index(request):
 	return render(request, 'index.html')
