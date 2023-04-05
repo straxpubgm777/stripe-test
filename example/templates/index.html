@@ -4,7 +4,7 @@
 
 <form action="{% url 'charge' %}" method="post" id="payment-form">
 	{% csrf_token %}
-	<h1>Updated</h1>
+	<h1>Updated for new</h1>
 
 	<input type="text" name="email" placeholder="Email" />
 	<input type="text" name="nickname" placeholder="nickname" />
@@ -25,7 +25,7 @@
   </form>
 
 	<script>
-		var stripe = Stripe('pk_live_51Mt6DHEZZAH1Sq8f8jRG25THVXDHYV2Jgco1EkLziYdCkK3bZ3Vst1554OKM1KrK4cHH1DKpG9r92YQXsI0Cw8KE00YC8yoRLi');
+		var stripe = Stripe('pk_live_51MtRR0G1Q4axGNZY8Ci33ZOq2rQs5jP30oGovVTEAt0qJeyOKbbSjHBiaJoNT8JUj0t8smQKKsLP4oj4ES4LGFxV00yjDhp6z4');
 		const elements = stripe.elements();
 
 		// Custom styling can be passed to options when creating an Element.
